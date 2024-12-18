@@ -1,8 +1,21 @@
+/* Apply background to the entire page */
+body {
+  background-color: #ecf0f1; /* Light gray background */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100%; /* Ensure the body takes up full height */
+  overflow: hidden; /* Disable scrolling */
+}
+
 .App {
   text-align: center;
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  background-color: #f8f9fa; /* Light background for the main content */
   padding: 20px;
+  min-height: 100vh; /* Ensure content takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
 }
 
 h1 {
@@ -14,7 +27,7 @@ h1 {
 table {
   margin: 0 auto 30px;
   border-collapse: collapse;
-  width: 85%;
+  width: 70%; /* Reduced table width for a smaller look */
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -23,7 +36,7 @@ table {
 table th,
 table td {
   border: 1px solid #ddd;
-  padding: 12px 16px;
+  padding: 8px 12px; /* Reduced padding to make the table more compact */
   text-align: center; /* Centering content horizontally */
   vertical-align: middle; /* Centering content vertically */
 }
@@ -71,7 +84,7 @@ span {
 
 @media screen and (max-width: 768px) {
   table {
-    width: 100%;
+    width: 90%; /* Adjusted width for smaller screens */
     margin: 10px 0;
   }
 
